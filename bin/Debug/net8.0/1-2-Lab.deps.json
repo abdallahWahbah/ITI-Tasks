@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "07-Mini Project/1.0.0": {
+      "1-2-Lab/1.0.0": {
         "runtime": {
-          "07-Mini Project.dll": {}
+          "1-2-Lab.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "07-Mini Project/1.0.0": {
+    "1-2-Lab/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

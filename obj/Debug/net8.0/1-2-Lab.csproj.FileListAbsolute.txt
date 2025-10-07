@@ -1,0 +1,14 @@
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\bin\Debug\net8.0\1-2-Lab.exe
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\bin\Debug\net8.0\1-2-Lab.deps.json
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\bin\Debug\net8.0\1-2-Lab.runtimeconfig.json
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\bin\Debug\net8.0\1-2-Lab.dll
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\bin\Debug\net8.0\1-2-Lab.pdb
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\obj\Debug\net8.0\1-2-Lab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\obj\Debug\net8.0\1-2-Lab.AssemblyInfoInputs.cache
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\obj\Debug\net8.0\1-2-Lab.AssemblyInfo.cs
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\obj\Debug\net8.0\1-2-Lab.csproj.CoreCompileInputs.cache
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\obj\Debug\net8.0\1-2-Lab.dll
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\obj\Debug\net8.0\refint\1-2-Lab.dll
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\obj\Debug\net8.0\1-2-Lab.pdb
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\obj\Debug\net8.0\1-2-Lab.genruntimeconfig.cache
+C:\Users\abdow\OneDrive\Desktop\projects\4-Linq\1-Lab\obj\Debug\net8.0\ref\1-2-Lab.dll

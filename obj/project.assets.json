@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abdow\\OneDrive\\Desktop\\projects\\2-ITI Advanced\\07-Mini Project\\07-Mini Project.csproj",
-      "projectName": "07-Mini Project",
-      "projectPath": "C:\\Users\\abdow\\OneDrive\\Desktop\\projects\\2-ITI Advanced\\07-Mini Project\\07-Mini Project.csproj",
+      "projectUniqueName": "C:\\Users\\abdow\\OneDrive\\Desktop\\projects\\4-Linq\\1-Lab\\1-2-Lab.csproj",
+      "projectName": "1-2-Lab",
+      "projectPath": "C:\\Users\\abdow\\OneDrive\\Desktop\\projects\\4-Linq\\1-Lab\\1-2-Lab.csproj",
       "packagesPath": "C:\\Users\\abdow\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abdow\\OneDrive\\Desktop\\projects\\2-ITI Advanced\\07-Mini Project\\obj\\",
+      "outputPath": "C:\\Users\\abdow\\OneDrive\\Desktop\\projects\\4-Linq\\1-Lab\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
