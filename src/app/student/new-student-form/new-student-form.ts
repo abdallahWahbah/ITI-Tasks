@@ -21,38 +21,36 @@ export class NewStudentForm implements OnInit {
   students!: StudentModel[];
 
   constructor(private _studentService: StudentService, private router: Router, private route: ActivatedRoute){
-    console.log(this.students);  
   }
 
   ngOnInit() {
-    this.students = this._studentService.students;
+    this._studentService.getAll().subscribe({
+      next: (data:any) => this.students = data
+    });
     let studentId = this.route.snapshot.params['id'];
 
     if(studentId){ // updating
-      let student = this._studentService.getById(+studentId);
-      if(student){
-        this.enteredName = student.name;
-        this.enteredAge = student.age.toString();
-        this.enteredAddress = student.address;
-        this.isUpdatingStudent = true
-      }
+      this._studentService.getById(studentId).subscribe({
+        next: student => {
+          this.enteredName = student.name;
+          this.enteredAge = student.age.toString();
+          this.enteredAddress = student.address;
+          this.isUpdatingStudent = true
+        }
+      })
     }
   }
 
   handleAddUpdateStudent(){
     if(this.isUpdatingStudent){ // updating student
-      console.log("111111111", {
-        id: +this.route.snapshot.params['id'],
-        name: this.enteredName,
-        age: +this.enteredAge,
-        address: this.enteredAddress
-      });
       this._studentService.updateStudent({
         id: +this.route.snapshot.params['id'],
         name: this.enteredName,
         age: +this.enteredAge,
         address: this.enteredAddress
-      });
+      }).subscribe({
+        next: data => console.log(data)
+      })
     }
     else{ // adding new student
       this._studentService.addStudent({
@@ -60,6 +58,8 @@ export class NewStudentForm implements OnInit {
         name: this.enteredName, 
         age: +this.enteredAge, 
         address: this.enteredAddress,
+      }).subscribe({
+        next: data => console.log(data)
       })
     }
     this.router.navigate(['/students'])

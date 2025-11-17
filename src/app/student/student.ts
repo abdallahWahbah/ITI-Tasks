@@ -25,7 +25,9 @@ export class Student implements OnInit {
   
   ngOnInit(): void {
     this.students = this._studentService.students;
-    this.filteredStudents = this._studentService.getAll();
+    this._studentService.getAll().subscribe({
+      next: (data:any) => this.filteredStudents = data
+    });
   }
   handleFilterValue(filterString: string){
     this.filteredStudents = 

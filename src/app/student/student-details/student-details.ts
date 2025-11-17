@@ -26,7 +26,11 @@ export class StudentDetails implements OnInit, OnDestroy{
       let id = +params['id'];
       if(id){
         this.studentId = id;
-        this.student = this._studentService.getById(id);
+        this._studentService.getById(id).subscribe({
+          next: student => {
+            this.student = student;
+          }
+        })
         console.log(this.student);
       } else {
         this.student = undefined;

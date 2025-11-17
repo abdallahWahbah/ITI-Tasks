@@ -1,0 +1,50 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+  <div class="mb-3">
+    <label class="form-label">Username</label>
+    <input
+      type="text"
+      formControlName="username"
+      class="form-control"
+      [class.is-invalid]="submitted && f['username'].invalid"
+    />
+
+    @if (submitted && f['username'].invalid) {
+      <div class="invalid-feedback">
+        Username is required.
+      </div>
+    }
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Password</label>
+    <input
+      type="password"
+      formControlName="password"
+      class="form-control"
+      [class.is-invalid]="submitted && f['password'].invalid"
+    />
+
+    @if (submitted && f['password'].invalid) {
+      <div class="invalid-feedback">
+        @if (f['password'].errors?.['required']) {
+          Password is required.
+        }
+        <!-- @if (f['password'].errors?.['minlength']) {
+          Password must be at least {{ f['password'].errors['minlength'].requiredLength }} characters.
+        } -->
+      </div>
+    }
+  </div>
+
+  @if (errorMessage) {
+    <div class="alert alert-danger">
+      {{ errorMessage }}
+    </div>
+  }
+
+  <button class="btn btn-primary w-100" type="submit" [disabled]="loading">
+    @if (!loading) { Login }
+    @else { Loading... }
+  </button>
+</form>

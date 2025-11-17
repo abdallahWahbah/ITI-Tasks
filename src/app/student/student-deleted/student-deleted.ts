@@ -15,7 +15,8 @@ export class StudentDeleted implements OnInit{
 
   ngOnInit(): void {
     let studentId = +this.route.snapshot.params['id'];
-    this._studentService.deleteStudent(studentId);
-    this.router.navigate(['/students']);
+    this._studentService.deleteStudent(studentId).subscribe({
+      next: data => this.router.navigate(['/students'])
+    });
   }
 }
