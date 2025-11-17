@@ -1,0 +1,12 @@
+<div class="container my-4">
+    <p-floatlabel variant="on">
+        <input 
+            pInputText 
+            id="on_label" 
+            autocomplete="off" 
+            [(ngModel)]="value" 
+            (ngModelChange)="valueChange.emit($event)"
+        />
+        <label for="on_label">filter by name</label>
+    </p-floatlabel>
+</div>

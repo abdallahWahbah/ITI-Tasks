@@ -1,0 +1,19 @@
+<app-student-filter
+  [value]="filterValue"
+  (valueChange)="handleFilterValue($event)"
+/>
+
+<div class="container my-4">
+  <div class="text-end mt-3">
+      <button 
+        class="btn btn-primary px-4" 
+        (click)="navigateNewStudent()"
+      >
+        Add Student
+      </button>
+  </div>
+</div>
+
+<app-student-list
+  [filteredStudents]="filteredStudents"
+/>

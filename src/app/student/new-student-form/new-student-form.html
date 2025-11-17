@@ -1,0 +1,26 @@
+<div class="container mt-5">
+
+  <div class="card p-4 mb-4 shadow-sm">
+    <div class="row g-3">
+      <div class="col-md-4">
+        <input class="form-control" placeholder="Enter name" [(ngModel)]="enteredName" />
+      </div>
+
+      <div class="col-md-4">
+        <input class="form-control" placeholder="Enter Age" [(ngModel)]="enteredAge" />
+      </div>
+
+      <div class="col-md-4">
+        <input class="form-control" placeholder="Enter Address" [(ngModel)]="enteredAddress" />
+      </div>
+    </div>
+
+    <div class="text-end mt-3">
+        <button 
+            class="btn btn-primary px-4" 
+            (click)="handleAddUpdateStudent()"
+        >
+            {{isUpdatingStudent ? 'Update' : 'Add'}} Student
+        </button>
+    </div>
+</div>

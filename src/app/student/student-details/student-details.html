@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <h3>Student Details</h3>
+
+  @if(student){
+      <div>
+        <p><strong>ID:</strong> {{ student.id }}</p>
+        <p><strong>Name:</strong> {{ student.name }}</p>
+        <p><strong>Age:</strong> {{ student.age }}</p>
+        <p><strong>Address:</strong> {{ student.address }}</p>
+      </div>
+  }
+
+  <hr>
+
+  <h5>Navigate to another student:</h5>
+  <div class="btn-group">
+    <a class="btn btn-outline-primary" [routerLink]="['/students/details', 1]">1</a>
+    <a class="btn btn-outline-primary" [routerLink]="['/students/details', 2]">2</a>
+    <a class="btn btn-outline-primary" [routerLink]="['/students/details', 3]">3</a>
+  </div>
+</div>
